@@ -1,0 +1,25 @@
+{  
+    "status": "success",  
+    "data":
+    [
+        {  
+            "id": 1,
+            "text": "Do something",
+            "to": "JSON",
+            "fromm": "XML"
+        }
+
+    ]
+}
+'''
+Generate curl request to http://127.0.0.1:8000/orders/ with the following data:
+
+        {  
+            "id": 1,
+            "product_id": 1,
+            "order_id": 1,
+            "pname": "Product 1"
+        }
+
+        curl -X POST -H "Content-Type: application/json" http://127.0.0.1:8000/convert/ -d "{\"id\":\"1\",\"order_id\":\"1\",\"pname\":\"JSON\",\"product_id\":\"1\"}"
+'''
